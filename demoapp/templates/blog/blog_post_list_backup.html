@@ -1,4 +1,4 @@
-{% extends "demoapp/base.html" %}
+{% extends "base.html" %}
 {% load i18n future mezzanine_tags blog_tags keyword_tags disqus_tags %}
 
 {% block meta_title %}{% if page %}{{ page.richtextpage.meta_title }}{% else %}{% trans "Blog" %}{% endif %}{% endblock %}
@@ -147,5 +147,4 @@
 
 {% block right_panel %}
 {% include "blog/includes/filter_panel.html" %}
-{% include "twitter/twittertest.html" %}
 {% endblock %}
