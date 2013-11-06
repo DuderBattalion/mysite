@@ -50,8 +50,7 @@
         {% block extra_head %}{% endblock %}
 
     </head>
-    <body id="{% block body_id %}body{% endblock %}">
-
+    <body>
         <!-- NAVBAR -->
         <div class="navbar-wrapper">
             <div class="container">
@@ -77,14 +76,25 @@
                 </div>
             </div>
 
-            <!-- Main jumbotron for a primary marketing message or call to action -->
-            <div class="jumbotron">
-                <div class="container">
-                    <h1>Hello, world!</h1>
-                    <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                    <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+            <div id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="{% static 'img/red_bg.jpg' %}" data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Blog headline</h1>
+                                <p>This is a blog headline I wrote for somethign that I had to write something for. </p>
+                                <p><a class="btn btn-large btn-primary" href="#">Read more</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
 
         </div>
 

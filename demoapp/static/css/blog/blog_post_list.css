@@ -42,3 +42,7 @@ ul{border:0; margin:0; padding:0;}
 .pagination a:hover{
     border:solid 1px #0e509e
 }
+
+body { /* Override mezzanine.css */
+    padding-top: 0px;
+}
